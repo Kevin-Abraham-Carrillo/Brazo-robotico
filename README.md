@@ -4,31 +4,35 @@ Este proyecto simula y controla un brazo robótico usando Arduino, cumpliendo lo
 
 ## 🔧 Modos de funcionamiento
 
-- **Modo Manual:** Control de 4 servos mediante potenciómetros.
-- **Modo Automático:** Rutina de 5 posiciones predefinidas, controladas por dos botones (siguiente / anterior).
+- **Modo Manual:** Control de 4 servos mediante potenciómetros con lectura suavizada.
+- **Modo Automático:** Rutina de 5 posiciones predefinidas, controladas por dos botones (siguiente / anterior), con movimiento progresivo.
 
 ## 💡 Características
 
 - Selección de modo mediante interruptor físico.
-- Indicadores de modo mediante LEDs (manual / automático).
-- Antirrebote implementado en botones.
-- Lectura de posiciones mostrada por consola serial.
-- Librería utilizada: [`Servo`](https://www.arduino.cc/reference/en/libraries/servo/)
+- Indicadores físicos de modo mediante LEDs (manual / automático).
+- Antirrebote implementado en botones físicos con verificación de flanco.
+- Visualización de ángulos de los servomotores en consola serial.
+- Movimiento progresivo entre posiciones (función personalizada `moverSuave`).
+- Lectura filtrada de potenciómetros (función personalizada `leerSuavizado`).
+- Código organizado y completamente comentado línea por línea.
 
 ## 📂 Archivos principales
 
-- `BrazoRobotico.ino`: Código fuente del sistema.
+- `BrazoRobotico.ino`: Código fuente del sistema (comentado y validado).
 - `README.md`: Descripción del proyecto.
 
-## 🎥 Video de funcionamiento
+## 🎥 Videos de funcionamiento
 
-[🔗 Enlace al video aquí](https://...tu_video...)
-
-## 🧠 Integrantes del equipo
-
-- Kevin Abraham Carrillo  
-- [Nombre del otro integrante]
+- [Video de funcionamiento físico](https://youtu.be/NTvcPJtqtIA)
+- [Explicación del código y control](https://youtu.be/bxls8XgvWuc)
 
 ## 🔗 Simulación Wokwi
 
-[🔗 Ver simulación en Wokwi](https://...tu_wokwi...)
+Puedes ver una verificación funcional completa del sistema aquí:
+[https://wokwi.com/projects/430150601346971649](https://wokwi.com/projects/430150601346971649)
+
+## 🧠 Integrantes del equipo
+
+- Kevin Abraham Carrillo López
+
